@@ -1,4 +1,4 @@
-import type { User } from '@/data/users';
+import type { User } from '@/types/User';
 
 export const getUserProfile = async (userId: number): Promise<User> => {
   await new Promise((resolve) => setTimeout(resolve, 100));

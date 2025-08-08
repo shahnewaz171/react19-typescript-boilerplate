@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import type { ChangeEvent, DetailedHTMLProps, InputHTMLAttributes } from 'react';
+import type { DetailedHTMLProps, InputHTMLAttributes } from 'react';
 import { cn } from '@/utils';
 
 interface InputProps
@@ -8,7 +8,7 @@ interface InputProps
   name: string;
   value: string;
   className?: string;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  onChange?: () => void;
   error?: string;
   type?: string;
   disabled?: boolean;

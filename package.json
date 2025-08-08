@@ -4,9 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "eslint . && tsc -b --watch",
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint --config eslint.config.ts .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "preview": "vite preview"
   },
   "dependencies": {

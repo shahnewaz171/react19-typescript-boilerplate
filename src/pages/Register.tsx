@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Register from '@/features/authentication/components/register';
 
 const RegisterPage = () => <Register />;

@@ -1,9 +1,4 @@
-import React from 'react';
-
-interface CustomIconProps {
-  width?: number;
-  height?: number;
-}
+import type { CustomIconProps } from '@/components/types/Icon';
 
 const CustomIcon = ({ width = 100, height = 100 }: CustomIconProps) => (
   <svg width={width} height={height}>

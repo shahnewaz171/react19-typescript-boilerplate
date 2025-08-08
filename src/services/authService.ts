@@ -1,8 +1,4 @@
-interface AuthResponse {
-  message: string;
-  status: number;
-  timestamp: string;
-}
+import type { AuthResponse } from '@/types/Auth';
 
 export const requestForLog = async (): Promise<AuthResponse> => {
   await new Promise((resolve) => setTimeout(resolve, 100));

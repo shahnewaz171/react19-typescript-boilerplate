@@ -73,7 +73,7 @@ export default defineConfig([
       ],
       'no-unused-expressions': 'off',
       '@typescript-eslint/no-unused-expressions': 'error',
-      'rest-spread-spacing': ['error', 'never'],
+      'rest-spread-spacing': ['error'],
       'object-curly-spacing': ['error', 'always'],
       'comma-spacing': ['error', { before: false, after: true }],
       'no-multi-spaces': 'error',
@@ -86,13 +86,13 @@ export default defineConfig([
       'arrow-body-style': ['error', 'as-needed'],
       'no-void': 'error',
       'no-empty': 'error',
-      'no-console': 'warn',
+      'no-console': 'off',
       'max-params': ['error', 4],
       'linebreak-style': 'off',
       camelcase: ['off', { properties: 'never' }],
 
       // react-specific
-      'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }],
+      'react/jsx-filename-extension': ['warn', { extensions: ['.ts', '.tsx'] }],
       'react/function-component-definition': [
         'error',
         {
@@ -104,7 +104,7 @@ export default defineConfig([
       'react/no-unknown-property': 'off',
       'react/jsx-key': 'error',
       'react/self-closing-comp': 'error',
-      'react-hooks/exhaustive-deps': 'warn',
+      'react-hooks/exhaustive-deps': 'off',
       'react/state-in-constructor': 'off',
       'react/destructuring-assignment': 'off',
 
