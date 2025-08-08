@@ -1,11 +1,13 @@
 import { createBrowserRouter } from 'react-router';
 import lazyRoutes from '@/lib/router/lazy-routes';
 
-const {
-  layouts: { Private: PrivateLayout, Public: PublicLayout },
-  pages: { Login, Register, Home, NotFound },
-  core: { ErrorBoundary }
-} = lazyRoutes;
+// core
+import PrivateLayout from '@/layouts/PrivateLayout';
+import PublicLayout from '@/layouts/PublicLayout';
+import ErrorBoundary from '@/components/core/ErrorBoundary';
+
+// pages
+const { Login, Register, Home, NotFound } = lazyRoutes;
 
 const router = createBrowserRouter([
   {
