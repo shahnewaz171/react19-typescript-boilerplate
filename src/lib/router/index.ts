@@ -10,7 +10,7 @@ const {
 const router = createBrowserRouter([
   {
     Component: PrivateLayout,
-    ErrorBoundary: ErrorBoundary,
+    ErrorBoundary,
     children: [
       {
         index: true,
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     Component: PublicLayout,
-    ErrorBoundary: ErrorBoundary,
+    ErrorBoundary,
     children: [
       { path: 'login', Component: Login },
       { path: 'register', Component: Register },

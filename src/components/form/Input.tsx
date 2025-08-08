@@ -1,5 +1,4 @@
-import { memo } from 'react';
-import type { DetailedHTMLProps, InputHTMLAttributes } from 'react';
+import { memo, type DetailedHTMLProps, type InputHTMLAttributes } from 'react';
 import { cn } from '@/utils';
 
 interface InputProps
